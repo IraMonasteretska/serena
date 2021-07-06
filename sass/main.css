@@ -1,11 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @font-face {
-  font-family: "ava";
-  src: url("../fonts/AVA.ttf");
+  font-family: 'avanti';
+  src: url("../fonts/avanti.eot");
+  src: url("../fonts/avanti?#iefix") format("embedded-opentype"), url("../fonts/avanti.woff") format("woff"), url("../fonts/avanti.ttf") format("truetype"), url("../fonts/avanti.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'avanti-bold';
+  src: url("../fonts/avanti-bold.eot");
+  src: url("../fonts/avanti-bold?#iefix") format("embedded-opentype"), url("../fonts/avanti-bold.woff") format("woff"), url("../fonts/avanti-bold.ttf") format("truetype"), url("../fonts/avanti-bold.svg") format("svg");
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   overflow-x: hidden;
   max-width: 2400px;
   margin: 0 auto;
@@ -38,7 +44,7 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   letter-spacing: 0.14em;
   font-size: 18px;
   line-height: 25px;
@@ -138,7 +144,7 @@ main {
 .section-subtitle {
   margin: 0;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   font-size: 20px;
   line-height: 27px;
   color: #9E9E9E;
@@ -173,7 +179,7 @@ main {
 }
 
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #28282C;
@@ -438,7 +444,7 @@ header.header {
 }
 
 .header__blackline-nav ul li a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -621,7 +627,7 @@ header.header {
 }
 
 .header__menu ul li a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 18px;
   line-height: 24px;
   color: #28282C;
@@ -712,7 +718,7 @@ header.header {
 }
 
 .header__loginbtn span {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 18px;
   line-height: 24px;
   color: #28282C;
@@ -1212,7 +1218,7 @@ header.header_two .header__loginbtn span::before {
 }
 
 .footer__menu li a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 18px;
   line-height: 24px;
   color: #3C3C3E;
@@ -1272,7 +1278,7 @@ header.header_two .header__loginbtn span::before {
 }
 
 .footer__contacts ul li a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 18px;
   line-height: 24px;
   color: #3C3C3E;
@@ -1554,7 +1560,7 @@ header.header_two .header__loginbtn span::before {
   position: absolute;
   right: 130px;
   bottom: 55px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   color: #9E9E9E;
   font-size: 20px;
   line-height: 27px;
@@ -1612,7 +1618,7 @@ header.header_two .header__loginbtn span::before {
 
 .mainslider__slidebox h3,
 .mainslider__slide-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 70px;
   line-height: 88px;
   letter-spacing: 0.08em;
@@ -1657,7 +1663,7 @@ header.header_two .header__loginbtn span::before {
   outline: none;
   background: transparent;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   color: #28282C;
   letter-spacing: 0.14em;
   font-size: 18px;
@@ -2147,7 +2153,7 @@ header.header_two .header__loginbtn span::before {
 
 .events__tablebody .ev {
   margin: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   letter-spacing: 0.08em;
   color: #28282C;
   font-size: 26px;
@@ -2521,7 +2527,7 @@ header.header_two .header__loginbtn span::before {
 
 .page-title,
 h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   letter-spacing: 0.14em;
   text-transform: uppercase;
   text-align: center;
@@ -2794,7 +2800,7 @@ h1 {
 }
 
 .collections__box-title p {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 34px;
   line-height: 140%;
   letter-spacing: 0.08em;
@@ -2832,7 +2838,7 @@ h1 {
 
 .collections__box-title a {
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   letter-spacing: 0.14em;
   color: #28282C;
   font-size: 18px;
@@ -2965,7 +2971,7 @@ h1 {
 
 .about-section .title,
 .about-section .title a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 28px;
   line-height: 170%;
   letter-spacing: 0.08em;
@@ -3239,7 +3245,7 @@ h1 {
   outline: none;
   background: transparent;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   color: #28282C;
   letter-spacing: 0.14em;
   font-size: 18px;
@@ -3365,7 +3371,7 @@ h1 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #28282C;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   margin-bottom: 73px;
   max-width: 957px;
 }
@@ -3486,7 +3492,7 @@ h1 {
   color: #28282C;
   font-size: 44px;
   line-height: 180%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-style: italic;
 }
 
@@ -3711,7 +3717,7 @@ h1 {
   color: #28282C;
   font-size: 44px;
   line-height: 180%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-style: italic;
 }
 
@@ -3865,7 +3871,7 @@ h1 {
 }
 
 .find-store .boxdescr .title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   margin-bottom: 67px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -4636,7 +4642,7 @@ h1 {
   line-height: 27px;
   letter-spacing: 0.18em;
   color: #28282C;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   height: 76px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4897,7 +4903,7 @@ h1 {
   line-height: 27px;
   letter-spacing: 0.18em;
   color: #28282C;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
 }
 
 @media (max-width: 1600.8px) {
@@ -5009,7 +5015,7 @@ h1 {
   color: #28282C;
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
 }
 
 @media (max-width: 1600.8px) {
@@ -5074,7 +5080,7 @@ h1 {
 
 .find-store .store-address .marker-link__name {
   display: block;
-  font-family: Playfair Display;
+  font-family: 'avanti';
   font-style: normal;
   font-weight: normal;
   font-size: 26px;
@@ -5267,7 +5273,7 @@ h1 {
   color: #28282C;
   font-size: 44px;
   line-height: 88px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   margin-bottom: 22px;
 }
 
@@ -5294,7 +5300,7 @@ h1 {
   padding-left: 30px;
   font-size: 20px;
   line-height: 27px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   color: rgba(40, 40, 44, 0.6);
 }
 
@@ -5467,7 +5473,7 @@ h1 {
   line-height: 21px;
   text-align: center;
   letter-spacing: 0.18em;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
 }
 
 .loginpopup .justfield span:hover {
@@ -5480,7 +5486,7 @@ h1 {
   color: #28282C;
   font-size: 44px;
   line-height: 44px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   margin-bottom: 0;
 }
 
@@ -5571,7 +5577,7 @@ h1 {
   text-align: center;
   font-size: 18px;
   line-height: 140%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   letter-spacing: 0.18em;
   color: #28282C;
   margin-bottom: 45px;
@@ -5671,7 +5677,7 @@ h1 {
   padding-left: 30px;
   font-size: 20px;
   line-height: 27px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   color: rgba(40, 40, 44, 0.6);
 }
 
@@ -5730,7 +5736,7 @@ h1 {
   line-height: 27px;
   color: rgba(40, 40, 44, 0.6);
   outline: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
 }
 
 @media (max-width: 1600.8px) {
@@ -5755,22 +5761,22 @@ h1 {
 
 .loginpopupform textarea::-webkit-input-placeholder {
   color: rgba(40, 40, 44, 0.6);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
 }
 
 .loginpopupform textarea:-ms-input-placeholder {
   color: rgba(40, 40, 44, 0.6);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
 }
 
 .loginpopupform textarea::-ms-input-placeholder {
   color: rgba(40, 40, 44, 0.6);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
 }
 
 .loginpopupform textarea::placeholder {
   color: rgba(40, 40, 44, 0.6);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
 }
 
 .loginpopup .mc-cont .bluebtn {
@@ -5913,7 +5919,7 @@ h1 {
   display: inline-block;
   font-size: 22px;
   line-height: 36px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
 }
 
 @media (max-width: 1600.8px) {
@@ -6038,7 +6044,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
 }
 
 .search-form .title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   letter-spacing: 0.18em;
   color: #28282C;
   font-size: 20px;
@@ -6166,7 +6172,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   color: #28282C;
   font-size: 44px;
   line-height: 88px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
 }
 
 @media (max-width: 1600.8px) {
@@ -6295,7 +6301,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
 }
 
 .sizepbody table td:first-child {
-  font-weight: bold;
+  font-family: 'avanti-bold';
 }
 
 .size-popup__wrap {
@@ -6604,7 +6610,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 43%;
           flex: 0 0 43%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 44px;
   line-height: 44px;
   letter-spacing: 0.14em;
@@ -6646,7 +6652,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 57%;
           flex: 0 0 57%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 0.18em;
@@ -6975,7 +6981,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
 .addressmap-sect .topsect ul li,
 .addressmap-sect .topsect ul li a {
   color: #fff;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 18px;
   line-height: 24px;
 }
@@ -7287,7 +7293,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
 
 .product__descr .name {
   margin-bottom: 95px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   font-size: 34px;
   line-height: 140%;
   letter-spacing: 0.08em;
@@ -7326,7 +7332,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   line-height: 29px;
   letter-spacing: 0.14em;
   color: #28282C;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
 }
 
 @media (max-width: 1600.8px) {
@@ -7581,7 +7587,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   line-height: 29px;
   letter-spacing: 0.14em;
   color: #28282C;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   margin: 0 0 24px;
   position: relative;
   padding-right: 40px;
@@ -7740,7 +7746,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   outline: none;
   background: transparent;
   text-transform: uppercase;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   color: #28282C;
   letter-spacing: 0.14em;
   font-size: 18px;
@@ -7978,7 +7984,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   color: #28282C;
   font-size: 20px;
   line-height: 27px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   margin-bottom: 9px;
   padding-left: 30px;
 }
@@ -8356,7 +8362,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   text-transform: uppercase;
   font-size: 26px;
   line-height: 35px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
   color: #28282C;
   letter-spacing: 0.08em;
   margin-bottom: 20px;
@@ -8658,7 +8664,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   color: rgba(40, 40, 44, 0.8);
   font-size: 16px;
   line-height: normal;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'avanti';
   margin-bottom: 20px;
   padding-left: 27px;
   position: relative;
@@ -8736,7 +8742,7 @@ input[type=password]::-webkit-credentials-auto-fill-button {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'avanti';
 }
 
 @media (max-width: 1024px) {
