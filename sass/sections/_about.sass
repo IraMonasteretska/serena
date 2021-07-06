@@ -1,0 +1,606 @@
+
+/* ABOUT - slider */
+.about-section
+    padding: 0px 0 0 130px
+    position: relative
+    +mq(1400px)
+        background: #738d74
+        padding: 50px 0 50px 80px
+    +mq(lg)
+        padding: 70px 40px 40px 40px
+    +mq(md)
+        padding: 40px 15px 40px 15px
+    &>.row
+        align-items: center
+        +mq(1400px)
+            align-items: inherit
+
+.about-section .title,
+.about-section .title a
+    font-family: 'Playfair Display', serif
+    font-size: 28px
+    line-height: 170%
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    color: #FFFFFF
+    margin-bottom: 35px
+    +mq(xxl)
+
+.about-section .title a:hover
+    border-bottom: 1px solid #646464
+    opacity: .7
+
+.about-section .descr p
+    font-size: 18px
+    line-height: 150%
+    color: #FFFFFF
+    opacity: 0.6
+
+.absect-left
+    width: 100%
+    max-width: 34%
+    flex: 0 0 34%
+    // padding-top: 118px
+    position: relative
+    z-index: 2
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background: #738d74
+
+.absect-left .topbox
+    padding: 103px 40px 103px 0
+    position: relative
+    +mq(xxl)
+        padding: 60px 30px 60px 0
+    +mq(1400px)
+        padding: 10px 20px 20px 0
+    +mq(lg)
+        padding: 10px 20px 0px 0
+    &:after
+        content: ''
+        display: block
+        position: absolute
+        right: 100%
+        top: 0
+        bottom: 0
+        width: 100%
+        background: #738d74
+
+.absect-left .bottbox
+    padding-right: 60px
+    padding-top: 40px
+    // position: absolute
+    background: #ffffff
+    top: 100%
+    +mq(1400px)
+        padding-top: 0
+        background: none
+    +mq(xxl)
+        padding-top: 20px
+    +mq(lg)
+        padding: 0
+        margin-bottom: 50px
+    p
+        color: #28282C
+        font-size: 18px
+        line-height: 150%
+        opacity: 0.6
+        margin: 0
+        +mq(xxl)
+            font-size: 16px
+        +mq(1400px)
+            color: #FFFFFF
+            opacity: 0.6
+        +mq(xl)
+            font-size: 14px
+
+.about__slide
+    position: relative
+    .video
+        position: relative
+        width: 100%
+        height: 0
+        padding-bottom: 56.25%
+        background-color: #000000
+
+    .video__link
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+    .video__media
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border: none
+
+    .video__button
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 1
+        display: none
+        padding: 0
+        width: 136px
+        height: 136px
+        border: none
+        background-color: transparent
+        transform: translate(-50%, -50%)
+        cursor: pointer
+        +mq(1400px)
+            width: 100px
+            height: 100px
+    .video__button-shape
+        transition: 0.3s
+
+    .video__button-icon
+        fill: #ffffff
+
+    .video__button:focus
+        outline: none
+
+    .video:hover .video__button-shape,
+    .video__button:focus .video__button-shape
+        fill: #738d74
+        fill-opacity: 1
+        opacity: 1
+
+    /* Enabled */
+
+    .video--enabled
+        cursor: pointer
+
+    .video--enabled .video__button
+        display: block
+
+.absect-right
+    width: 100%
+    max-width: 66%
+    flex: 0 0 66%
+    position: relative
+    z-index: 2
+
+.aboutslider
+    padding-bottom: 93px
+    +mq(xxl)
+        padding-bottom: 73px
+    +mq(1400px)
+        padding-bottom: 0
+
+    &__control
+        position: relative
+        height: 25px
+        +mq(1400px)
+            margin-top: 45px
+
+        +mq(lg)
+            margin-top: 45px
+        .pagingInfo
+            bottom: 0
+            color: #28282C
+            +mq(1400px)
+                color: #ffffff
+
+        .slick-arrow
+            position: absolute
+            bottom: 0
+            z-index: 2
+            border: none
+            padding: 0
+            outline: none
+            background: transparent
+            text-transform: uppercase
+            font-family: 'Open Sans', sans-serif
+            color: #28282C
+            letter-spacing: 0.14em
+            font-size: 18px
+            line-height: 25px
+            transition: 0.3s
+            +mq(xxl)
+                font-size: 16px
+            +mq(1400px)
+                color: #ffffff
+            +mq(sm)
+                font-size: 14px
+            &:hover
+                opacity: 0.6
+
+        .slick-arrow.slick-prev
+            left: 0
+
+        .slick-arrow.slick-next
+            left: 255px
+            +mq(sm)
+                left: 150px
+
+        .slick-arrow.slick-next:before
+            content: ''
+            display: inline-block
+            height: 1px
+            width: 144px
+            background: #28282C
+            position: absolute
+            top: 48%
+            transform: translateX(-175px)
+            -webkit-transform: translateX(-175px)
+            -moz-transform: translateX(-175px)
+            -ms-transform: translateX(-175px)
+            -o-transform: translateX(-175px)
+            +mq(1400px)
+                background: #ffffff
+            +mq(sm)
+                width: 80px
+                transform: translateX(-97px)
+                -webkit-transform: translateX(-97px)
+                -moz-transform: translateX(-97px)
+                -ms-transform: translateX(-97px)
+                -o-transform: translateX(-97px)
+
+.absect-right .pagingInfo
+    bottom: 36px
+
+/* ABOUT - slider   -  END */
+
+// about page
+
+.inform-sect2
+    padding-bottom: 200px
+    +mq(xxl)
+        padding-bottom: 120px
+    +mq(xl)
+        padding-bottom: 80px
+    +mq(lg)
+        padding-bottom: 50px
+    +mq(md)
+        padding-bottom: 50px
+
+.inform-sect2 .description
+    padding-left: 50px
+    +mq(xl)
+        padding-left: 0
+
+.inform-sect2 .description .title
+    font-size: 28px
+    line-height: 170%
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    color: #28282C
+    font-family: 'Playfair Display', serif
+    margin-bottom: 73px
+    max-width: 957px
+    +mq(xxl)
+        font-size: 24px
+        line-height: 150%
+        max-width: 800px
+        margin-bottom: 40px
+    +mq(xl)
+        font-size: 20px
+        max-width: 700px
+    +mq(md)
+        margin-bottom: 20px
+
+.inform-sect2 .description .descrtext p
+    font-size: 18px
+    line-height: 160%
+    color: #28282C
+    +mq(xxl)
+        font-size: 16px
+
+.inform-sect2 .description .descrtext:first-child p
+    padding-right: 35px
+
+.inform-sect2 .description .descrtext:nth-child(2) p
+    padding-left: 35px
+    +mq(lg)
+        padding-left: 0
+
+.inform-sect2 .description .descrtext p:last-child
+    margin-bottom: 0
+
+.about-section.abus
+    margin-bottom: 200px
+    +mq(xxl)
+        margin-bottom: 100px
+    +mq(1400px)
+        margin-bottom: 50px
+
+.about-section .descr p, .bottbox p
+    +mq(xxl)
+        font-size: 16px
+    +mq(xl)
+        font-size: 14px
+
+.inform-sect2.pb70
+    padding-bottom: 70px
+    +mq(xl)
+        padding-bottom: 50px
+    +mq(lg)
+        padding-bottom: 30px
+    +mq(md)
+        padding-bottom: 0px
+
+.about-section__quote
+    text-align: left
+    display: flex
+    align-items: center
+    height: 100%
+    position: relative
+    letter-spacing: 0.14em
+    color: #28282C
+    font-size: 44px
+    line-height: 180%
+    font-family: 'Playfair Display', serif
+    font-style: italic
+    p
+        font-size: 44px
+        line-height: 180%
+        position: relative
+        margin-bottom: 0
+        padding: 90px 50px 20px 100px
+        +mq(1700px)
+            font-size: 32px
+            line-height: 150%
+        +mq(xxl)
+            padding: 55px 0px 20px 70px
+        +mq(xl)
+            font-size: 24px
+        +mq(lg)
+            font-size: 20px
+            line-height: 130%
+            padding: 55px 0px 20px 0px
+        +mq(md)
+            padding: 55px 0px 40px 0px
+        &::before
+            content: ''
+            display: inline-block
+            position: absolute
+            left: 0
+            top: 0px
+            width: 92px
+            height: 69px
+            background-image: url(../img/icon/quote-green.svg)
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 100%
+            +mq(xxl)
+                width: 60px
+                height: 44px
+
+.about-section .title, .about-section .title a
+    +mq(xxl)
+        font-size: 22px
+    +mq(xl)
+        font-size: 18px
+    +mq(lg)
+        font-size: 26px
+    +mq(md)
+        font-size: 22px
+    +mq(sm)
+        font-size: 18px
+
+.absect-right .pagingInfo
+    +mq(xl)
+        bottom: 34px
+    +mq(lg)
+        right: 0
+
+.abslwrapp
+    +mq(xl)
+        position: relative
+
+.absect-left, .absect-right
+    +mq(lg)
+        max-width: 100%
+        flex: 0 0 100%
+
+.inform-sect1
+    padding-right: 130px
+    padding-bottom: 200px
+    +mq(xxl)
+        padding-bottom: 120px
+    +mq(xl)
+        padding-bottom: 80px
+    +mq(md)
+        padding-bottom: 50px
+        padding-right: 15px
+    +mq(sm)
+        padding-left: 15px
+        padding-right: 15px
+        padding-bottom: 30px
+
+.inform-sect1 img
+    width: 100%
+
+.inform-sect1 .leftpic
+    padding: 0 15px
+    width: 100%
+    max-width: 64%
+    flex: 0 0 64%
+    +mq(sm)
+        max-width: 100%
+        flex: 0 0 100%
+        order: 2
+
+.inform-sect1 .rightdescr
+    padding: 0 15px
+    width: 100%
+    max-width: 36%
+    flex: 0 0 36%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    +mq(sm)
+        max-width: 100%
+        flex: 0 0 100%
+        order: 1
+        margin-bottom: 20px
+
+.absect-descr
+    +mq(sm)
+        margin-top: 20px
+
+.inform-sect1 .rightdescr .absect-descr p
+    padding-left: 80px
+    position: relative
+    letter-spacing: 0.14em
+    color: #28282C
+    font-size: 44px
+    line-height: 180%
+    font-family: 'Playfair Display', serif
+    font-style: italic
+
+    +mq(xxl)
+        font-size: 32px
+        line-height: 150%
+    +mq(xl)
+        padding-left: 0
+        font-size: 24px
+    +mq(lg)
+        font-size: 18px
+
+.inform-sect1 .rightdescr .absect-descr p:before
+    content: ''
+    display: inline-block
+    position: absolute
+    left: 0
+    top: -67px
+    width: 92px
+    height: 69px
+    background-image: url('../img/icon/quote-green.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+    +mq(xxl)
+        width: 60px
+        height: 44px
+        top: -44px
+        padding-left: 60px
+    +mq(xl)
+        width: 35px
+        height: 28px
+        top: -28px
+        padding-left: 0
+    +mq(lg)
+        width: 24px
+        height: 19px
+        top: -20px
+
+// .inform-sect2 
+//     padding-bottom: 200px
+//     +mq(xxl)
+//         padding-bottom: 120px
+//     +mq(xl)
+//         padding-bottom: 80px
+//     +mq(lg)
+//         padding-bottom: 50px
+//     +mq(md)
+//         padding-bottom: 50px
+
+// .inform-sect2 .description 
+//     padding-left: 50px
+//     +mq(xl)
+//         padding-left: 0
+
+// .inform-sect2 .description .title 
+//     font-size: 28px
+//     line-height: 170%
+//     letter-spacing: 0.08em
+//     text-transform: uppercase
+//     color: #28282C
+//     font-family: 'Playfair Display', serif
+//     margin-bottom: 73px
+//     max-width: 957px
+//     +mq(xxl)
+//         font-size: 24px
+//         line-height: 150%
+//         max-width: 800px
+//         margin-bottom: 40px
+//     +mq(xl)
+//         font-size: 20px
+//         max-width: 700px
+//     +mq(md)
+//         margin-bottom: 20px
+
+// .inform-sect2 .description .descrtext 
+//     +mq(md)
+//         margin-bottom: 20px
+//     p 
+//         font-size: 18px
+//         line-height: 160%
+//         color: #28282C
+//         +mq(xxl)
+//             font-size: 16px
+
+// .inform-sect2 .description .descrtext:first-child p 
+//     padding-right: 35px
+
+// .inform-sect2 .description .descrtext:nth-child(2) p 
+//     padding-left: 35px
+//     +mq(lg)
+//         padding-left: 0
+
+// .inform-sect2 .description .descrtext p:last-child 
+//     margin-bottom: 0
+
+// .about-section.abus .absect-left 
+//     padding-top: 0
+//     +mq(xxl)
+//         padding-top: 55px
+
+// .about-section.abus .section-subtitle 
+//     margin-bottom: 90px
+
+// .about-section .descr ul 
+//     padding: 0 0 0 23px
+//     margin: 0
+//     list-style-type: none
+//     margin-top: 40px
+
+// .about-section .descr ul li 
+//     font-size: 18px
+//     line-height: 150%
+//     color: #FFFFFF
+//     opacity: 0.6
+//     margin-bottom: 10px
+//     position: relative
+//     padding-left: 27px
+
+// .about-section .descr ul li:last-child 
+//     margin-bottom: 0
+
+// .about-section .descr ul li:after 
+//     content: ''
+//     display: inline-block
+//     position: absolute
+//     left: 0
+//     top: 10px
+//     width: 7px
+//     height: 7px
+//     background: #FFFFFF
+//     opacity: 0.6
+
+// .about-section.abus 
+//     padding-bottom: 200px
+//     +mq(xxl)
+//         padding-bottom: 80px
+//     +mq(1400px)
+//         adding-bottom: 0
+//     +mq(md)
+//         margin-bottom: 50px
+
+// .inform-sect2.pb70
+//     padding-bottom: 100px
+//     +mq(xl)
+//         padding-bottom: 50px
+//     +mq(lg)
+//         padding-bottom: 30px
+//     +mq(md)
+//         padding-bottom: 0px
+
+// .inform-sect1 .rightdescr .absect-descr p 
+//     margin-bottom: 0

@@ -1,0 +1,235 @@
+.mainslider-section 
+    height: 100vh
+    min-height: 575px
+    max-height: 1200px
+    +mq(1400px)
+        height: 700px
+        min-height: 575px
+        position: relative
+    +mq(xl)
+        height: 575px
+    +mq(sm)
+        height: 100vh
+
+.mainslider__slide 
+    padding-top: 140px
+    height: 100vh
+    background: #F1F1F1
+    position: relative
+    min-height: 575px
+    max-height: 1200px
+    text-align: right
+    +mq(xxl)
+        display: flex
+        align-items: center
+        padding-top: 130px
+    +mq(1400px)
+        height: 700px
+        padding-top: 120px
+    +mq(xl)
+        height: 575px
+        padding-top: 110px
+    +mq(lg)
+        padding-top: 30px
+    +mq(sm)
+        height: 100vh
+
+    &-bg
+        background: #BC9988
+        opacity: 0.2
+        width: 287px
+        height: 611px
+        position: absolute
+        left: 0
+        bottom: 0
+        transition: 0.3s
+        +mq(1400px)
+            width: 220px
+            height: 450px
+        +mq(xl)
+            width: 180px
+            height: 380px
+        +mq(lg)
+            width: 180px
+            height: 400px
+        +mq(md)
+            display: none
+       
+
+.mainslider__slide img 
+    width: 58.333333%
+    // width: 100%
+    height: 100%
+    object-fit: cover
+    // object-position: 0 0
+    display: inline-block
+    margin-left: auto
+    +mq(1400px)
+        object-position: 100% 0
+    +mq(lg)
+        object-position: 70% 0
+    +mq(md)
+        opacity: 0.6
+        width: 100%
+
+.slick-slide 
+    outline: none
+
+
+.pagingInfo 
+    position: absolute
+    right: 130px
+    bottom: 55px
+    font-family: 'Open Sans', sans-serif
+    color: #9E9E9E
+    font-size: 20px
+    line-height: 27px
+    +mq(xxl)
+        font-size: 18px
+        bottom: 35px
+    +mq(1400px)
+        right: 80px
+        font-size: 16px
+    +mq(lg)
+        right: 40px
+    +mq(md)
+        right: 15px
+    +mq(sm)
+        bottom: 20px
+
+.mainslider-section
+    .pagingInfo 
+        color: #ffffff
+
+.mainslider__slidebox 
+    position: absolute
+    z-index: 2
+    bottom: 25%
+    width: 100%
+    left: 0
+    +mq(xxl)
+        bottom: initial
+
+.mainslider__slidebox h3,
+.mainslider__slide-title 
+    font-family: 'Playfair Display', serif
+    font-size: 70px
+    line-height: 88px
+    letter-spacing: 0.08em
+    color: #28282C
+    text-transform: capitalize
+    margin-bottom: 70px
+    text-align: left
+    +mq(xxl)
+        font-size: 48px
+        line-height: 68px
+    +mq(1400px)
+        font-size: 42px
+        line-height: 56px
+        margin-bottom: 50px
+    +mq(lg)
+        font-size: 36px
+        line-height: 46px
+        margin-bottom: 40px
+
+.mainslider .slick-arrow 
+    position: absolute
+    bottom: 55px
+    z-index: 2
+    border: none
+    padding: 0
+    outline: none
+    background: transparent
+    text-transform: uppercase
+    font-family: 'Open Sans', sans-serif
+    color: #28282C
+    letter-spacing: 0.14em
+    font-size: 18px
+    line-height: 25px
+    +mq(xxl)
+        font-size: 16px
+        bottom: 35px
+    +mq(sm)
+        bottom: 20px
+        font-size: 14px
+
+.mainslider .slick-arrow.slick-prev 
+    left: 130px
+    +mq(1400px)
+        left: 80px
+    +mq(lg)
+        left: 40px
+    +mq(md)
+        left: 15px
+    
+
+
+.mainslider .slick-arrow.slick-next 
+    left: 385px
+    +mq(xxl)
+        left: 330px
+    +mq(1400px)
+        left: 270px
+    +mq(lg)
+        left: 200px
+    +mq(md)
+        left: 160px
+    
+
+.mainslider .slick-arrow.slick-next:before 
+    content: ''
+    display: inline-block
+    height: 1px
+    width: 144px
+    background: #28282C
+    position: absolute
+    top: 48%
+    transform: translateX(-175px)
+    -webkit-transform: translateX(-175px)
+    -moz-transform: translateX(-175px)
+    -ms-transform: translateX(-175px)
+    -o-transform: translateX(-175px)
+    +mq(xxl)
+        width: 100px
+        transform: translateX(-127px)
+        -webkit-transform: translateX(-127px)
+        -moz-transform: translateX(-127px)
+        -ms-transform: translateX(-127px)
+        -o-transform: translateX(-127px)
+    +mq(1400px)
+        width: 100px
+        transform: translateX(-122px)
+        -webkit-transform: translateX(-122px)
+        -moz-transform: translateX(-122px)
+        -ms-transform: translateX(-122px)
+        -o-transform: translateX(-122px)
+    +mq(lg)
+        width: 70px
+        transform: translateX(-94px)
+        -webkit-transform: translateX(-94px)
+        -moz-transform: translateX(-94px)
+        -ms-transform: translateX(-94px)
+        -o-transform: translateX(-94px)
+    +mq(md)
+        transform: translateX(-85px)
+        -webkit-transform: translateX(-85px)
+        -moz-transform: translateX(-85px)
+        -ms-transform: translateX(-85px)
+        -o-transform: translateX(-85px)
+
+.mainslider .slick-arrow.slick-next,
+.mainslider .slick-arrow.slick-prev,
+.aboutslider .slick-arrow.slick-next,
+.aboutslider .slick-arrow.slick-prev 
+    transition: .3s
+    -webkit-transition: .3s
+    -moz-transition: .3s
+    -ms-transition: .3s
+    -o-transition: .3s
+
+
+.mainslider .slick-arrow.slick-next:hover,
+.mainslider .slick-arrow.slick-prev:hover,
+.aboutslider .slick-arrow.slick-next:hover,
+.aboutslider .slick-arrow.slick-prev:hover 
+    opacity: .6

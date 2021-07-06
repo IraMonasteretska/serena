@@ -1,0 +1,153 @@
+/* Collections */
+.collections 
+    padding: 140px 0 0 0
+    +mq(xxl)
+        padding: 100px 0 0 0
+    +mq(xl)
+        padding: 75px 0 0 0
+    +mq(lg)
+        padding: 50px 0 0 0
+    
+    .row
+        +mq(lg)
+            margin-left: -5px
+            margin-right: -5px
+        div[class*=col-]
+            +mq(lg)
+                padding-left: 5px
+                padding-right: 5px
+
+
+.collections__box 
+    margin-bottom: 30px
+    +mq(lg)
+        margin-bottom: 10px
+
+.collections__box img 
+    width: 100%
+    height: 100%
+    object-fit: cover
+    object-position: 50% 50%
+    +mq(sm)
+        opacity: 0.7
+
+.collections__box.higher 
+    height: 815px
+    overflow: hidden
+    +mq(xxl)
+        height: 610px
+    +mq(xl)
+        height: 430px
+    +mq(lg)
+        height: 360px
+    +mq(md)
+        height: 275px
+    +mq(sm)
+        height: 220px
+
+
+.collections__box-title 
+    max-width: 320px
+    position: absolute
+    +mq(md)
+        max-width: calc(100% - 45px) !important
+        top: initial !important
+        left: 30px !important
+        bottom: 30px !important
+    +mq(sm)
+        max-width: 100%
+        left: 0 !important
+        bottom: 0 !important
+        padding: 0 0 15px 15px
+
+.collections__box-title 
+    p 
+        font-family: 'Playfair Display', serif
+        font-size: 34px
+        line-height: 140%
+        letter-spacing: 0.08em
+        color: $dn_black
+        margin-bottom: 28px
+        +mq(xxl)
+            font-size: 28px
+            margin-bottom: 20px
+        +mq(xl)
+            font-size: 22px
+            margin-bottom: 15px
+        +mq(lg)
+            font-size: 20px
+            margin-bottom: 10px
+        +mq(sm)
+            font-size: 18px
+            margin-bottom: 8px
+
+    a 
+        text-transform: uppercase
+        font-family: 'Open Sans', sans-serif
+        letter-spacing: 0.14em
+        color: $dn_black
+        font-size: 18px
+        line-height: 25px
+        position: relative
+        +mq(xxl)
+            font-size: 16px
+        +mq(sm)
+            font-size: 14px
+
+        &:after 
+            content: ''
+            display: inline-block
+            width: 51px
+            height: 1px
+            background: $dn_black
+            position: absolute
+            left: 0
+            right: 0
+            bottom: -3px
+            -webkit-transform: scale3d(1, 1, 1)
+            transform: scale3d(1, 1, 1)
+            -webkit-transform-origin: 0% 50%
+            -ms-transform-origin: 0% 50%
+            transform-origin: 0% 50%
+            -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1)
+            transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1)
+            -o-transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1)
+            transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1)
+            transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1)
+            +mq(xxl)
+                width: 100%
+
+        &:hover:after 
+            -webkit-transform: scale3d(0, 1, 1)
+            transform: scale3d(0, 1, 1)
+            -webkit-transform-origin: 100% 50%
+            -ms-transform-origin: 100% 50%
+            transform-origin: 100% 50%
+
+
+.collections__content 
+    .col-xl-6:first-child 
+        .collections__box-title 
+            top: 120px
+            left: 65px
+            +mq(xxl)
+                top: 90px
+                max-width: 260px
+            +mq(xl)
+                top: 70px
+                max-width: 240px
+
+    .col-xl-6:last-child 
+        .collections__box-title 
+            bottom: 120px
+            right: 65px
+            +mq(xxl)
+                bottom: 90px
+                max-width: 260px
+            +mq(xl)
+                bottom: 70px
+                max-width: 240px
+
+
+
+/* Collections end*/
