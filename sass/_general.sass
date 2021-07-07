@@ -225,3 +225,24 @@ main
     .topsect
         .section-subtitle
             color: #fff
+
+.hswrapp
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+    .header__blackline-search
+        margin-right: 60px
+        +mq(xl)
+            margin-right: 40px
+
+.search-form
+    +mq(sm)
+        padding-left: 20px !important
+        padding-right: 20px !important
+
+.header__blackline-search span img
+    transition: .3s
+
+.header__blackline-search span img:hover
+    opacity: .6
